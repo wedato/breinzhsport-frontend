@@ -1,0 +1,179 @@
+.home-page {
+  margin-top: -20px; /* Pour compenser le padding du conteneur principal */
+}
+
+/* Bannière principale */
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://via.placeholder.com/1600x600?text=Sport+Equipment");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  margin-bottom: 40px;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Titres de section */
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: var(--text-color);
+}
+
+/* Grille de catégories */
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.category-card {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s;
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  text-decoration: none;
+}
+
+.category-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.category-card h3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Grille de produits */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 15px;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.product-card .price {
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.product-card a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.view-all {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Section avantages */
+.benefits-section {
+  background-color: var(--background-color);
+  padding: 40px 0;
+  margin-bottom: -40px; /* Pour compenser le margin-bottom du conteneur principal */
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.benefit-card {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  text-align: center;
+}
+
+.benefit-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.benefit-card h3 {
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.benefit-card p {
+  color: var(--text-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+}

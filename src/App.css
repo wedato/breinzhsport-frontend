@@ -1,0 +1,71 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Variables CSS globales */
+:root {
+  --primary-color: #3f51b5;
+  --primary-color-dark: #303f9f;
+  --secondary-color: #f50057;
+  --text-color: #333;
+  --background-color: #f5f5f5;
+  --success-color: #4caf50;
+  --error-color: #f44336;
+  --border-radius: 4px;
+  --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles de base */
+body {
+  margin: 0;
+  font-family: "Roboto", "Segoe UI", "Arial", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--primary-color-dark);
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+  background-color: #f5f5f5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 15px;
+  }
+}
