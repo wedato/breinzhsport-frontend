@@ -4,14 +4,14 @@ frontend:
     preBuild:
       commands:
         - npm ci
-        - find ./node_modules/.bin -type f -exec chmod +x {} \;
+        - chmod -R +x node_modules/.bin
     build:
       commands:
         - npm run build
   artifacts:
     baseDirectory: build
     files:
-      - "**/*"
+      - '**/*'
   cache:
     paths:
       - node_modules/**/*
