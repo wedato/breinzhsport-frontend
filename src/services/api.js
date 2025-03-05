@@ -1,11 +1,21 @@
 import { API } from "aws-amplify";
+import AWSXRay, { traceApiCall } from "../xray-config";
 
 const API_NAME = "sportEquipmentApi";
 
 // Fonctions pour les produits
 export const getProducts = async () => {
   try {
-    return await API.get(API_NAME, "/products", {});
+    const segment = AWSXRay.beginSegment("getProducts");
+    try {
+      const result = await API.get(API_NAME, "/products", {});
+      segment.close();
+      return result;
+    } catch (error) {
+      segment.addError(error);
+      segment.close();
+      throw error;
+    }
   } catch (error) {
     console.error("Erreur lors de la récupération des produits:", error);
     throw error;
@@ -14,7 +24,17 @@ export const getProducts = async () => {
 
 export const getProduct = async (productId) => {
   try {
-    return await API.get(API_NAME, `/products/${productId}`, {});
+    const segment = AWSXRay.beginSegment("getProduct");
+    segment.addAnnotation("productId", productId);
+    try {
+      const result = await API.get(API_NAME, `/products/${productId}`, {});
+      segment.close();
+      return result;
+    } catch (error) {
+      segment.addError(error);
+      segment.close();
+      throw error;
+    }
   } catch (error) {
     console.error(
       `Erreur lors de la récupération du produit ${productId}:`,
@@ -64,7 +84,16 @@ export const deleteProduct = async (productId) => {
 // Fonctions pour les commandes
 export const getOrders = async () => {
   try {
-    return await API.get(API_NAME, "/orders", {});
+    const segment = AWSXRay.beginSegment("getOrders");
+    try {
+      const result = await API.get(API_NAME, "/orders", {});
+      segment.close();
+      return result;
+    } catch (error) {
+      segment.addError(error);
+      segment.close();
+      throw error;
+    }
   } catch (error) {
     console.error("Erreur lors de la récupération des commandes:", error);
     throw error;
@@ -97,7 +126,16 @@ export const createOrder = async (orderData) => {
 // Fonctions pour les utilisateurs
 export const getUserInfo = async () => {
   try {
-    return await API.get(API_NAME, "/users/me", {});
+    const segment = AWSXRay.beginSegment("getUserInfo");
+    try {
+      const result = await API.get(API_NAME, "/users/me", {});
+      segment.close();
+      return result;
+    } catch (error) {
+      segment.addError(error);
+      segment.close();
+      throw error;
+    }
   } catch (error) {
     console.error(
       "Erreur lors de la récupération des informations utilisateur:",
