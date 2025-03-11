@@ -1,7 +1,7 @@
 import { API } from "aws-amplify";
 import AWSXRay, { traceApiCall } from "../xray-config";
 
-const API_NAME = "sportEquipmentApi";
+const API_NAME = "breizhsportApi";
 
 // Fonctions pour les produits
 export const getProducts = async () => {

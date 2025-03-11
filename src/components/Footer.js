@@ -9,7 +9,7 @@ function Footer() {
     <footer className="footer">
       <div className="container footer-container">
         <div className="footer-section">
-          <h3>SportEquip</h3>
+          <h3>Breizhsport</h3>
           <p>Votre destination pour l'équipement sportif de qualité.</p>
         </div>
 
@@ -51,14 +51,14 @@ function Footer() {
 
         <div className="footer-section">
           <h3>Contact</h3>
-          <p>Email: contact@sportequip.com</p>
+          <p>Email: contact@breizhsport.com</p>
           <p>Téléphone: +33 1 23 45 67 89</p>
         </div>
       </div>
 
       <div className="footer-bottom">
         <div className="container">
-          <p>&copy; {currentYear} SportEquip. Tous droits réservés.</p>
+          <p>&copy; {currentYear} Breizhsport. Tous droits réservés.</p>
           <p>
             <Link to="/privacy">Politique de confidentialité</Link> |
             <Link to="/terms">Conditions d'utilisation</Link>

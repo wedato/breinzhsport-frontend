@@ -27,7 +27,7 @@ function Header() {
       <div className="container header-container">
         <div className="logo">
           <Link to="/">
-            <h1>SportEquip</h1>
+            <h1>Breizhsport</h1>
           </Link>
         </div>
         <nav className="nav">

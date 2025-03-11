@@ -15,7 +15,7 @@ Amplify.configure({
   API: {
     endpoints: [
       {
-        name: "sportEquipmentApi",
+        name: "breizhsportApi",
         endpoint:
           process.env.REACT_APP_API_URL ||
           "https://wfsopm1zn4.execute-api.eu-west-3.amazonaws.com/prod",
