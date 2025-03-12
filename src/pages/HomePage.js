@@ -13,7 +13,7 @@ function HomePage() {
     {
       id: "basketball",
       name: "Basketball",
-      image: "https://via.placeholder.com/300x200?text=Basketball",
+      image: "/images/products/basket.jpg",
     },
     {
       id: "running",
