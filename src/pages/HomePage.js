@@ -13,7 +13,7 @@ function HomePage() {
     {
       id: "basketball",
       name: "Basketball",
-      image: "/images/products/basket.jpg",
+      image: "/images/products/basket.png",
     },
     {
       id: "running",

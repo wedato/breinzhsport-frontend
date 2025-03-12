@@ -114,7 +114,7 @@ function ProductsPage() {
               category: "fitness",
               description:
                 "Paire d'haltères de 5kg pour vos exercices de musculation.",
-              image: "/images/products/dumbell.jpg",
+              image: "/images/products/dumbell.png",
             },
           ];
         }

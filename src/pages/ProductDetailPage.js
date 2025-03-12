@@ -166,7 +166,7 @@ function ProductDetailPage() {
                 "Idéal pour les exercices à domicile",
               ],
               stock: 10,
-              image: "/images/products/dumbell.jpg",
+              image: "/images/products/dumbell.png",
             },
           };
 

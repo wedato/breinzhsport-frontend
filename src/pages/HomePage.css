@@ -5,7 +5,7 @@
 /* Bannière principale */
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/images/products/home.jpg");
+    url("/images/products/home.png");
   background-size: cover;
   background-position: center;
   color: white;
