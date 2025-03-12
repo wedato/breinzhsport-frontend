@@ -3,10 +3,13 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm install
+        - npm ci
         - chmod -R +x node_modules/.bin
     build:
       commands:
+        - echo "Exécution des tests..."
+        - npm test -- --watchAll=false --ci
+        - echo "Construction de l'application..."
         - npm run build
   artifacts:
     baseDirectory: build
