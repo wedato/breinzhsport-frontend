@@ -8,22 +8,21 @@ function HomePage() {
     {
       id: "football",
       name: "Football",
-      image: "https://via.placeholder.com/300x200?text=Football",
     },
     {
       id: "basketball",
       name: "Basketball",
-      image: "https://via.placeholder.com/300x200?text=Basketball",
+      image: "/images/products/basket.png",
     },
     {
       id: "running",
       name: "Course à pied",
-      image: "https://via.placeholder.com/300x200?text=Running",
+      image: "/images/products/running.png",
     },
     {
       id: "fitness",
       name: "Fitness",
-      image: "https://via.placeholder.com/300x200?text=Fitness",
+      image: "/images/products/fitness.png",
     },
   ];
 
@@ -33,25 +32,25 @@ function HomePage() {
       id: "1",
       name: "Ballon de football professionnel",
       price: 49.99,
-      image: "https://via.placeholder.com/200x200?text=Football",
+      image: "/images/products/football.png",
     },
     {
       id: "2",
       name: "Chaussures de running",
       price: 89.99,
-      image: "https://via.placeholder.com/200x200?text=Running+Shoes",
+      image: "/images/products/running.png",
     },
     {
       id: "3",
       name: "Maillot de basketball",
       price: 59.99,
-      image: "https://via.placeholder.com/200x200?text=Basketball+Jersey",
+      image: "/images/products/basket.png",
     },
     {
       id: "4",
       name: "Tapis de yoga",
       price: 29.99,
-      image: "https://via.placeholder.com/200x200?text=Yoga+Mat",
+      image: "/images/products/fitness.png",
     },
   ];
 
