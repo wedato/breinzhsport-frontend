@@ -3,7 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm ci
+        - npm install
         - chmod -R +x node_modules/.bin
     build:
       commands:
