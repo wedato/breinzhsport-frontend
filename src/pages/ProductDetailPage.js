@@ -166,7 +166,7 @@ function ProductDetailPage() {
                 "Idéal pour les exercices à domicile",
               ],
               stock: 10,
-              image: "https://via.placeholder.com/500x500?text=Dumbbells",
+              image: "/images/products/dumbell.jpg",
             },
           };
 

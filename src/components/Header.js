@@ -25,12 +25,17 @@ function Header() {
   return (
     <header className="header">
       <div className="container header-container">
-        <div className="logo">
-          <Link to="/">
+        <div className="logo-container">
+          <Link to="/" className="logo-link">
             <img
               src="/Image2.svg"
-              alt="Breizhsport Logo"
+              alt="Breizhsport Logo SVG"
               className="logo-image"
+            />
+            <img
+              src="/Image1.png"
+              alt="Breizhsport Logo PNG"
+              className="logo-image-secondary"
             />
           </Link>
         </div>
