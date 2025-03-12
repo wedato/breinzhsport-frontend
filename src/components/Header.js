@@ -27,7 +27,11 @@ function Header() {
       <div className="container header-container">
         <div className="logo">
           <Link to="/">
-            <h1>Breizhsport</h1>
+            <img
+              src="/Image2.svg"
+              alt="Breizhsport Logo"
+              className="logo-image"
+            />
           </Link>
         </div>
         <nav className="nav">
